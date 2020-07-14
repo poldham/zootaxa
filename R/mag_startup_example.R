@@ -172,14 +172,14 @@ journals <- tbl(sc, "journals_2020_tbl") %>%
 
 citation <- tbl(sc, "citation_2020_tbl") %>% 
   rename(paperid = "_c0",
-          paperreferenceid = "c1",
-          citationconotext = "c2")
+          paperreferenceid = "_c1",
+          citationconotext = "_c2")
 
 # Paper References (for Cited papers)
 
 references <- tbl(sc, "references_2020_tbl") %>% 
   rename(paperid = "_c0",
-         paperreferenceid = "c1")
+         paperreferenceid = "_c1")
 
 # Abstracts (inverted index)
 
