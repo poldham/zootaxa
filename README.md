@@ -19,7 +19,7 @@ Metadata for papers published in Zootaxa and available in Microsoft Academic Gra
 
 This includes all publications recorded as cited references for Zootaxa in Microsoft Academic Graph. 
 
-zootaxa_cited_papers
+[zootaxa_cited_papers](https://github.com/poldham/zootaxa/raw/master/data/cited/zootaxa_cited_papers.tsv.gz)
 
 ### Citing (TBD)
 
@@ -31,7 +31,7 @@ This set includes all publications (papers and references) on the Zootaxa site a
 
 Matching between the raw cited data and MAG was performed using the DOI field with the DOI converted to upper case. The guid field is preserved as the unique identifier. 
 
-raw_cited_papers
+[raw_cited_papers](https://github.com/poldham/zootaxa/raw/master/data/raw_cited/raw_cited_papers.tsv.gz)
 
 ### Microsoft Academic Graph
 
