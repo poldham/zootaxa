@@ -24,10 +24,13 @@
 
 # Setup Connection and Load Libraries -------------------------------------
 
+#install.packages("tidyverse")
+#install.packages("sparklyr")
+
 library(sparklyr)
 library(tidyverse)
 
-# point to your version of Java that matches the cluster (e.g. 8 for Runtime 6.5)
+# point to your version of Java that matches the cluster (e.g. 8 for Databricks Runtime 6.5)
 # fill in your own user path for your configuration
 
 Sys.setenv(JAVA_HOME="user/.jenv/versions/1.8.0.202")
@@ -68,7 +71,10 @@ affiliations <- tbl(sc, "affiliations_2020_tbl") %>%
          affiliation_longitude = "_c11",
          affiliation_createddate = "_c12")
 
-# this includes the original affiliations data?
+# the table below includes the original affiliations data
+# this table provides the link to/from the papers table
+# to the affiliation and authors tables
+
 author_affiliations <- tbl(sc, "author_affiliations_2020_tbl") %>% 
   rename(paperid = "_c0", 
          authorid = "_c1", 
@@ -95,10 +101,13 @@ fos <- tbl(sc, "fos_2020_tbl") %>%
          fos_citationcount = "_c8",
          fos_createddate = "_c9")
 
+# link table from papers to fos table
 fos_papers <- tbl(sc, "fos_papers_2020_tbl") %>%
   rename(paperid = "_c0", 
          fosid = "_c1", 
          score = "_c2")
+
+# Papers
 
 papers <- tbl(sc, "papers_2020_tbl") %>% 
   rename(paperid = "_c0", 
@@ -124,6 +133,9 @@ papers <- tbl(sc, "papers_2020_tbl") %>%
          originalvenue = "_c20",
          paper_familyid = "_c21",
          paper_createddate = "_c22")
+
+# papers extended
+# for patents, putbmen and pubmed central ids
 
 paperextended <- tbl(sc, "paper_extended_attributes_2020_tbl") %>% 
   rename(paperid = "_c0", 
@@ -156,7 +168,6 @@ journals <- tbl(sc, "journals_2020_tbl") %>%
          journal_citationcount = "_c9",
          journal_createddate = "_c10")
 
-
 # Citation Context (for Citing papers)
 
 citation <- tbl(sc, "citation_2020_tbl") %>% 
@@ -169,7 +180,6 @@ citation <- tbl(sc, "citation_2020_tbl") %>%
 references <- tbl(sc, "references_2020_tbl") %>% 
   rename(paperid = "_c0",
          paperreferenceid = "c1")
-
 
 # Abstracts (inverted index)
 
