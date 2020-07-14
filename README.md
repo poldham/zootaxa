@@ -10,10 +10,10 @@ Examples of joins used to create the datasets are provided in the `R` folder usi
 
 Metadata for papers published in Zootaxa and available in Microsoft Academic Graph as of May 2020. A quick Tableau workbook containing this data is available on [Tableau Public](https://public.tableau.com/profile/poldham#!/vizhome/Zootaxa/Overview). 
 
-zootaxa_papers (titles, doi, paperid etc)
-zootaxa_authors (author names linked to paper id and affiliationid)
-zootaxa_affiliations (author affiliations linked to authorids, normally incomplete data)
-zootaxa_fieldsofstudy (MAG labels describing the field of study of individual papers based on a combination of author keywords and machine learning)
+- zootaxa_papers (titles, doi, paperid etc)
+-  zootaxa_authors (author names linked to paper id and affiliationid)
+- zootaxa_affiliations (author affiliations linked to authorids, normally incomplete data)
+- zootaxa_fieldsofstudy (MAG labels describing the field of study of individual papers based on a combination of author keywords and machine learning)
 
 ### Cited papers (155,854 publications)
 
