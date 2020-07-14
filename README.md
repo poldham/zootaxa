@@ -8,7 +8,7 @@ Examples of joins used to create the datasets are provided in the `R` folder usi
 
 ### Zootaxa (27,974 publications)
 
-Metadata for papers published in Zootaxa and available in Microsoft Academic Graph as of May 2020. A quick Tableau workbook containing this data is available on [Tableau Public](https://public.tableau.com/profile/poldham#!/vizhome/Zootaxa/Overview). Larger files are gzipped.
+Metadata for papers published in Zootaxa and available in Microsoft Academic Graph as of May 2020. A quick Tableau workbook containing this data is available on [Tableau Public](https://public.tableau.com/profile/poldham#!/vizhome/Zootaxa/Overview). Larger files are gzipped. Click on a link to download.
 
 - [zootaxa_papers](https://github.com/poldham/zootaxa/raw/master/data/zootaxa/zootaxa_papers.csv) (titles, doi, paperid etc)
 -  [zootaxa_authors](https://github.com/poldham/zootaxa/raw/master/data/zootaxa/zootaxa_authors.csv.gz) (author names linked to paper id and affiliationid)
