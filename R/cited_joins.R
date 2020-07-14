@@ -28,7 +28,7 @@ spark_write_csv(zootaxa_cited, "zootaxa_cited_csv")
 
 # dbfs cp -r dbfs:/zootaxa_cited_csv ./zootaxa_cited_csv
 
-# read in to R (spark_disconnect from the cluster, then run R/spark_local_setup.R)
+# read in to R (first spark_disconnect(sc) from the cluster, then run R/spark_local_setup.R)
 
 zootaxa_cited_papers <- spark_read_csv(sc, path = "/Users/colinbarnes/zootaxa/zootaxa_cited_csv") %>% 
   collect()
