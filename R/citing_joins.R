@@ -78,4 +78,10 @@ nrow(zootaxa_citing) # 116,525 (close enough for now but test paperids)
 
 write_csv(zootaxa_citing, "data/citing/citing.csv")
 R.utils::gzip("data/citing/citing.csv")
+save(zootaxa_citing, file = "data/citing/zootaxa_citing.rda", compress = "xz")
+
+# Note: Excess rows
+# test on duplicates for the small discrepancy
+# this is trickier than it seems as the paperids may be duplicated where they are citing more than one article
+# in the zootaxa source set. More thought needed
 
