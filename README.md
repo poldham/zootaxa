@@ -21,9 +21,11 @@ This includes all publications recorded as cited references for Zootaxa in Micro
 
 [zootaxa_cited_papers](https://github.com/poldham/zootaxa/raw/master/data/cited/zootaxa_cited_papers.tsv.gz)
 
-### Citing (TBD)
+### Citing (116,525 publications)
 
-Pending
+This includes all publications recorded as citing Zootaxa articles in Microsoft Academic Graph.
+
+[zootaxa_citing_papers](https://github.com/poldham/zootaxa/blob/master/data/citing/zootaxa_citing_papers.tsv?raw=true)
 
 ### Raw Cited (125,798 papers of 137,542 dois in the `Zootaxa literature cited dataset`)
 
